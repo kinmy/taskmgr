@@ -1,5 +1,6 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
-import { HttpModule } from "@angular/http";
+// import { HttpModule } from "@angular/http";
+import { HttpClientModule } from "@angular/common/http";
 import { MatIconRegistry } from "@angular/material";
 import { DomSanitizer } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -11,9 +12,10 @@ import { loadSvgResources } from "../utils/svg.util";
 
 @NgModule({
   imports: [
-    HttpModule,
+    // HttpModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   declarations: [
     HeaderComponent,
