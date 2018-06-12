@@ -1,0 +1,31 @@
+<form>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>登陆：</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-input-container class="full-width">
+        <input matInput type="text" placeholder="您的email">
+      </mat-input-container>
+      <mat-input-container class="full-width">
+        <input matInput type="text" placeholder="您的姓名">
+      </mat-input-container>
+      <mat-input-container class="full-width">
+        <input matInput type="password" placeholder="您的密码">
+      </mat-input-container>
+      <mat-input-container class="full-width">
+        <input matInput type="password" placeholder="重复输入您的密码">
+      </mat-input-container>
+      <mat-grid-list cols="6">
+        <mat-grid-tile *ngFor="let item of items">
+          <mat-icon class="avatar" [svgIcon]="item"></mat-icon>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <button mat-raised-button color="primary" type="button">注册</button>
+    </mat-card-content>
+    <mat-card-actions class="text-right">
+      <p>还没有账户？<a href="">登陆</a> </p>
+      <p>忘记密码？<a href="">找回</a> </p>
+    </mat-card-actions>
+  </mat-card>
+</form>
