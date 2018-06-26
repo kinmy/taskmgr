@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { NewTaskComponent } from '../new-task/new-task.component';
 
 @Component({
   selector: 'app-task-home',
@@ -6,11 +8,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-home.component.scss']
 })
 export class TaskHomeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   lists = [
     {
@@ -74,5 +71,15 @@ export class TaskHomeComponent implements OnInit {
         }
       ]
     }
-  ]
+  ];
+
+  constructor(private dialog: MatDialog) { }
+
+  ngOnInit() {
+  }
+
+  launchNewTaskDialog() {
+    this.dialog.open(NewTaskComponent);
+  }
+
 }
