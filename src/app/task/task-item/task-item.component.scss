@@ -1,0 +1,30 @@
+mat-icon.avatar {
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 12px;
+  order: 3;
+}
+
+.priority-normal {
+  border-left: 3px solid #a6a6a6;
+}
+
+.priority-important {
+  border-left: 3px solid #ffaf38;
+}
+
+.priority-emergency {
+  border-left: 3px solid red;
+}
+
+.completed {
+  opacity: 0.64;
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.completion-status {
+  order: -1;
+}

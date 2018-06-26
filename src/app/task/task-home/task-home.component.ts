@@ -20,20 +20,25 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一：去星巴克买杯咖啡',
+          completed: true,
+          priority: 3,
           owner: {
             id: 1,
             name: '张三',
-            avatar: 'avatars: svg-11'
+            avatar: 'avatars:svg-11'
           },
           dueDate: new Date(),
+          reminder: new Date()
         },
         {
-          id: 1,
-          desc: '任务一：去星巴克买杯咖啡',
+          id: 2,
+          desc: '任务二：去星巴克买杯咖啡和蛋糕',
+          completed: false,
+          priority: 2,
           owner: {
             id: 1,
             name: '张三',
-            avatar: 'avatars: svg-11'
+            avatar: 'avatars:svg-11'
           },
           dueDate: new Date(),
         }
@@ -46,20 +51,24 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一：去星巴克买杯咖啡',
+          completed: false,
+          priority: 1,
           owner: {
             id: 1,
             name: '张三',
-            avatar: 'avatars: svg-11'
+            avatar: 'avatars:svg-11'
           },
           dueDate: new Date(),
         },
         {
-          id: 1,
+          id: 2,
           desc: '任务一：去星巴克买杯咖啡',
+          completed: false,
+          priority: 2,
           owner: {
             id: 1,
             name: '张三',
-            avatar: 'avatars: svg-11'
+            avatar: 'avatars:svg-11'
           },
           dueDate: new Date(),
         }
