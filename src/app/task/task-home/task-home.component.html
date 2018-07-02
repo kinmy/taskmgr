@@ -9,7 +9,8 @@
     </app-task-header>
     <app-task-item
       *ngFor="let task of list.tasks"
-      [item]="task">
+      [item]="task"
+      (taskClick)="launchUpdateTaskDialog(task)">
     </app-task-item>
   </app-task-list>
 </div>
