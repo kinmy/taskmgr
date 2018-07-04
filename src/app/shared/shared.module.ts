@@ -62,6 +62,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatNativeDateModule,
     MatSelectModule
   ],
+  entryComponents: [ConfirmDialogComponent],
   declarations: [ConfirmDialogComponent]
 })
 export class SharedModule { }
